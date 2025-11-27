@@ -1,0 +1,11 @@
+torch
+transformers
+soundfile
+fastapi
+uvicorn[standard]
+ffmpeg-python
+python-multipart
+prometheus-client
+psutil
+pynvml
+numpy
