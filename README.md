@@ -365,33 +365,5 @@ flake8 gateway_stt_modal.py
 3. **Batch Processing**: Use multiple concurrent requests for batch transcription
 4. **Caching**: Implement client-side caching for repeated transcriptions
 
-## Contributing
-
-Contributions are welcome! Please follow these steps:
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/amazing-feature`
-3. Commit your changes: `git commit -m 'Add amazing feature'`
-4. Push to the branch: `git push origin feature/amazing-feature`
-5. Open a Pull Request
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Support
-
-- **Documentation**: [Full Documentation](https://docs.yourproject.com)
-- **Issues**: [GitHub Issues](https://github.com/yourusername/stt-gateway/issues)
-- **Email**: support@yourproject.com
-- **Discord**: [Join our community](https://discord.gg/yourserver)
-
-## Acknowledgments
-
-- Built with [FastAPI](https://fastapi.tiangolo.com/)
-- Deployed on [Modal](https://modal.com)
-- Backend STT services powered by VoiceBreeze
-
----
 
 Made with ❤️ by [Your Team Name]
