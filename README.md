@@ -78,7 +78,7 @@ curl -X POST "https://your-gateway-url/transcribe" \
 {
   "request_id": "req_1234567890",
   "language": "hausa",
-  "routed_to": "https://voicebreeze--hausa-stt-endpoint-api.modal.run/transcribe",
+  "routed_to": "https://user--hausa-stt-endpoint-api.modal.run/transcribe",
   "transcription": "Sannu, yaya kuke?",
   "backend_response": {...},
   "latency_seconds": 2.345,
@@ -115,9 +115,9 @@ curl "https://your-gateway-url/languages"
 **Response:**
 ```json
 {
-  "hausa": "https://voicebreeze--hausa-stt-endpoint-api.modal.run/transcribe",
-  "yoruba": "https://voicebreeze--yoruba-stt-endpoint-api.modal.run/transcribe",
-  "igbo": "https://voicebreeze--multilingual-speech-translation-endpoint-api.modal.run/transcribe"
+  "hausa": "https://user--hausa-stt-endpoint-api.modal.run/transcribe",
+  "yoruba": "https://user--yoruba-stt-endpoint-api.modal.run/transcribe",
+  "igbo": "https://user--multilingual-speech-translation-endpoint-api.modal.run/transcribe"
 }
 ```
 
@@ -182,13 +182,6 @@ The gateway implements a microservices architecture pattern where a central gate
 └─────┘ └─────┘ └─────┘
 ```
 
-### Backend Services
-
-| Language | Backend Service | Endpoint URL |
-|----------|----------------|--------------|
-| Hausa | hausa-stt-endpoint-api | https://voicebreeze--hausa-stt-endpoint-api.modal.run/transcribe |
-| Yoruba | yoruba-stt-endpoint-api | https://voicebreeze--yoruba-stt-endpoint-api.modal.run/transcribe |
-| Igbo | multilingual-speech-translation-endpoint-api | https://voicebreeze--multilingual-speech-translation-endpoint-api.modal.run/transcribe |
 
 ## Reliability & Resilience
 
@@ -295,9 +288,9 @@ Adding support for a new language is simple. Update the `LANGUAGE_ENDPOINTS` dic
 
 ```python
 LANGUAGE_ENDPOINTS = {
-    "hausa": "https://voicebreeze--hausa-stt-endpoint-api.modal.run/transcribe",
-    "yoruba": "https://voicebreeze--yoruba-stt-endpoint-api.modal.run/transcribe",
-    "igbo": "https://voicebreeze--multilingual-speech-translation-endpoint-api.modal.run/transcribe",
+    "hausa": "https://user--hausa-stt-endpoint-api.modal.run/transcribe",
+    "yoruba": "https://user--yoruba-stt-endpoint-api.modal.run/transcribe",
+    "igbo": "https://user--multilingual-speech-translation-endpoint-api.modal.run/transcribe",
     "swahili": "https://your-new-backend-endpoint.modal.run/transcribe"  # Add new language
 }
 ```
